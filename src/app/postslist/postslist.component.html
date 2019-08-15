@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Posts List</h1>        
+    <hr>
+  <div class="row">
+    <app-postslist-item 
+      *ngFor="let post of postsArr"  
+      [postItem]="post" 
+      [ngClass]="['col-lg-4 mx-auto']"
+    ></app-postslist-item>
+  </div>
+  <hr>
+  <div class="my-5">
+    <button type="button" 
+    class="btn btn-outline-info mx-auto d-flex"
+    (click)="loadMorePosts()" >Load More...</button>
+  </div>
+</div>
+
+  
+
+
+
